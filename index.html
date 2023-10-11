@@ -17,30 +17,42 @@
 </head>
 <body>
     <div class="container-fluid">
+        <div class="offcanvas offcanvas-start" id="aboutUs">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">About Us</h2>
+                <button class=" btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body"></div>
+        </div>
+        <div class="offcanvas offcanvas-start" id="contactus">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Contact Us</h2>
+                <button class=" btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body"></div>
+        </div>
         <header class="container-fluid sticky-top">
-            <div class="navbar navbar-expand">
+            <div class="navbar container-fluid navbar-expand">
                 <h2 class="navbar-brand"><a href="#" class="text-decoration-none text-black">MakeYourOwn TodoList</a></h2>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="flex-fill"></div>
                     <div class="navbar-nav">
-                        <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
-                        <div class="nav-item"><a href="#" class="nav-link">Menu</a></div>
-                        <div class="nav-item"><a href="#" class="nav-link">ContactUS</a></div>
-                        <div class="nav-item"><a href="#" class="nav-link">AboutUs</a></div>
+                        <div class="nav-item"><button type="button" data-bs-target="#contactus" data-bs-toggle="offcanvas" class="nav-link btn">ContactUS</button></div>
+                        <div class="nav-item"><button type="button" data-bs-target="#aboutUs" data-bs-toggle="offcanvas" class="nav-link btn">AboutUs</button></div>
                     </div>
                 </div>
             </div>
         </header>
         <section class="container-fluid mt-2">
-            <div class="input-adder container">
+            <div class="input-adder container-fluid">
                 <div class="input-group">
-                    <input type="text" name="" id="" class="form-control">
-                    <button type="button" class="input-group-text">Add <i class="fas fa-plus"></i></button>
+                    <input type="text" placeholder="Add a new tesk" name="tdinput" id="tdinput" class="form-control">
+                    <button type="button" id="inputBtn" style="width:30%; text-align: center;" class="input-group-text text-center">Add <i class="fas fa-plus"></i></button>
                 </div>
             </div>
-            <div id="todos" class="mt-2 container">
+            <div id="todos" class="mt-2 container-fluid">
                 <div class="card">
-                    <h3 class="card-header">Todo List</h3>
+                    <div class="card-header"><h3>Todo List <i class="fas fa-list"></i></h3></div>
                     <div class="card-body">
                         <ul class="list-group" id="todolist">
                         </ul>
