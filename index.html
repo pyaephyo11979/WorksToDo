@@ -127,12 +127,17 @@
             </div>
         </header>
         <section class="container-fluid mt-2">
-            <div class="input-adder  text-center container-fluid">
+            <div class="row ">
+            <div class="input-adder col-8   text-center container-fluid">
                 <div class="input-group text-center rounded-5" style="width:100%">
                     <input type="text" placeholder="Add a new tesk" name="tdinput" id="tdinput" class="form-control rounded-start-5">
                     <button type="button" id="inputBtn" style="text-align: center;" class="input-group-text btn fs-5 rounded-end-5">Add <i class="fas fa-beat fa-plus"></i></button>
                 </div>
             </div>
+            <div class="mt-2 col-4 d-flex justify-content-center  container "><div class="timeSpace  text-center" id="clockSpace"></div>
+            </div>
+        </div>
+            
             <div id="todos" class="mt-4 container-fluid">
                 <div class="card rounded-3">
                     <div class="card-header rounded-top-3"><h3>Todo List <i class="fa-duotone fa-fade fa-list "></i></h3></div>

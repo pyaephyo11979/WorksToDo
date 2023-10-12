@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 body{
     background-color: whitesmoke;
 }
@@ -18,4 +19,15 @@ body{
 }
 #restoBtn{
     background-color: antiquewhite;
+}
+.timeSpace{
+    border:2px double ;
+    background-color: rgba(0, 0, 0, 0.966);
+    width: fit-content;
+    height:fit-content;
+    padding:30px;
+    font-family: 'VT323', monospace;
+    color:lightgreen;
+    border-radius: 30px;
+    font-size: 70px;
 }
