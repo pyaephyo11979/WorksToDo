@@ -11,11 +11,11 @@ btn.addEventListener('click',()=>{
         let todo=JSON.parse(localStorage.getItem('todos'));
         let li=document.createElement('li');
         li.classList.add('list-group-item');
-        li.innerHTML=`<span class="fs-6"><i class="fa-duotone fa-list"></i></span><span class="fs-6"> ${todo[todo.length-1]}</span>
+        li.innerHTML=`<span class="fs-6"><i class="fa-duotone fa-list"></i></span><span class="fs-6 name"> ${todo[todo.length-1]}</span>
         <button class="delete btn"><i class="fas fa-trash"></i></button>`
         listdisplay.appendChild(li);
         li.querySelector('.delete').addEventListener('click',()=>{
-            let index=todos.indexOf(li.querySelector('span').innerText);
+            let index=todos.indexOf(li.querySelector('.name').innerText);
             todos.splice(index,1);
             localStorage.setItem('todos',JSON.stringify(todos));
             listdisplay.removeChild(li);
@@ -34,11 +34,11 @@ input.addEventListener('keydown',(e)=>{
             li.classList.add('list-group-item');
             li.innerHTML=`
             <span class="fs-6"><i class="fa-duotone fa-list"></i></span>
-            <span class="fs-6"> ${todo[todo.length-1]}</span>
+            <span class="fs-6 name"> ${todo[todo.length-1]}</span>
             <button class="delete btn"><i class="fas fa-trash"></i></button>`
             listdisplay.appendChild(li);
             li.querySelector('.delete').addEventListener('click',()=>{
-                let index=todos.indexOf(li.querySelector('span').innerText);
+                let index=todos.indexOf(li.querySelector('.name').innerText);
                 todos.splice(index,1);
                 localStorage.setItem('todos',JSON.stringify(todos));
                 listdisplay.removeChild(li);
