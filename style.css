@@ -27,7 +27,7 @@ body{
     height:fit-content;
     padding:30px;
     font-family: 'VT323', monospace;
-    color:lightgreen;
+    color:rgb(248, 225, 179);
     border-radius: 30px;
     font-size: 70px;
 }
